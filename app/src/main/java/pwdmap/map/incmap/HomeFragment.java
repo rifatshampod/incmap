@@ -86,8 +86,12 @@ public class HomeFragment extends Fragment {
         mapBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(getActivity(), MiddleLayer.class);
-                intent.putExtra("name",3);
+                //Intent intent = new Intent(getActivity(), MiddleLayer.class);
+                //intent.putExtra("name",3);
+                //startActivity(intent);
+
+                Intent intent = new Intent(getActivity(), MapsPlaces.class);
+                //intent.putExtra("name",1);
                 startActivity(intent);
             }
         });
